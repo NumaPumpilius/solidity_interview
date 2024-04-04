@@ -1,66 +1,18 @@
-## Foundry
+## Task 1: Reentrance
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+The goal is to steal all the funds from the contract Reentrance contract. You cannot modify Reentrance contract. Create a local test that proves your ability to steal funds from the contract.
 
-Foundry consists of:
+# Task 2: Upgradeable Factory
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Your goal is to create a factory of upgradeable MockVault contracts. Complete the UpgradeableFactory contact such that it adheres to the IUpgradeableFactory interface. 
 
-## Documentation
+The factory should be able to:
 
-https://book.getfoundry.sh/
+* create new MockVault contracts
+* upgrade all MockVault contracts created by the factory to new implementation (with the ability to pass initializer data)
+* downgrade all MockVault contracts created by the factory to previous implementation (with the ability to pass initializer data)
 
-## Usage
 
-### Build
+# Task 3: Hell Func
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Your goal is to mint yourself a Hell Func NFT. Deploy HellSpawnFuncCaller on local Anvil and mint yourself an Hell Func NFT. You cannot modify HellSpawnFuncCaller or HellSpawnFunc
