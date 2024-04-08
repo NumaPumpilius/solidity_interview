@@ -1,8 +1,4 @@
-## Task 1: Reentrance
-
-The goal is to steal all the funds from the contract Reentrance contract. You cannot modify Reentrance contract. Create a local test that proves your ability to steal funds from the contract.
-
-## Task 2: Upgradeable Factory
+## Task 1: Upgradeable Factory
 
 Your goal is to create a factory of upgradeable MockVault contracts. Complete the UpgradeableFactory contact such that it adheres to the IUpgradeableFactory interface. 
 
@@ -13,6 +9,10 @@ The factory should be able to:
 * downgrade all MockVault contracts created by the factory to previous implementation (with the ability to pass initializer data)
 
 
-## Task 3: Hell Func
+## Task 2: Hell Func
 
 Your goal is to mint yourself a Hell Func NFT. Deploy HellSpawnFuncCaller on local Anvil and mint yourself an Hell Func NFT. You cannot modify HellSpawnFuncCaller or HellSpawnFunc
+
+## Task 3: Vulnerability
+
+The goal is to steal funds from the VulnerableLender contact. The contract uses VulnerableLiquidityPool as a price feed. VulnerableLiquidityPool is a simplified AMM DEX for ETH-SyntheticETH pair that issues LPTokens for the provided liquidity. You can find LPToken and SyntheticETH contracts in the periphery folder. Your goal is to modify the Attacker contract to pass the ExploitTest.
