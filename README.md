@@ -15,4 +15,7 @@ Your goal is to mint yourself a Hell Func NFT. Deploy HellSpawnFuncCaller on loc
 
 ## Task 3: Vulnerability
 
-The goal is to steal funds from the VulnerableLender contact. The contract uses VulnerableLiquidityPool as a price feed. VulnerableLiquidityPool is a simplified AMM DEX for ETH-SyntheticETH pair that issues LPTokens for the provided liquidity. You can find LPToken and SyntheticETH contracts in the periphery folder. Your goal is to modify the Attacker contract to pass the ExploitTest.
+The goal is to steal funds from the VulnerableLender contact. The contract uses VulnerableLiquidityPool as a price feed. VulnerableLiquidityPool is a simplified AMM DEX for ETH-SyntheticETH pair that issues LPTokens for the provided liquidity. You can find LPToken and SyntheticETH contracts in the periphery folder. 
+
+* Create an Attacker contract that exploits the existing vulnerability
+* Create a Foundry Test that proves the Attacker contract ability to steal funds from the VulnerableLender contact
