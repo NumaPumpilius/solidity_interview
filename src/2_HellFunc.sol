@@ -15,11 +15,6 @@ contract HellSpawnFuncCaller is ERC721 {
         s_hellfSpawnFunc = new HellSpawnFunc();
     }
 
-    function description() external pure returns (string memory) {
-        return
-            "Oof, that's a lot of conditionals! Hope you didn't do it manually ;)";
-    }
-
     function callHellFunc(uint128 numbor) external {
         try s_hellfSpawnFunc.hellFunc(numbor) returns (uint256) {
             // Do nothing
