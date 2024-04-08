@@ -8,7 +8,7 @@ The factory should be able to:
 * upgrade all MockVault contracts created by the factory to new implementation (with the ability to pass initializer data)
 * downgrade all MockVault contracts created by the factory to previous implementation (with the ability to pass initializer data)
 
-Create foundry tests that proves that all functionality is implemented correctly.
+Create foundry tests that prove that all functionality is implemented correctly.
 
 
 ## Task 2: Hell Func
